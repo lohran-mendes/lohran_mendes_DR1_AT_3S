@@ -1,4 +1,4 @@
-.ProposalsComponent {
+.AgendaComponent {
   padding: 2rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -6,17 +6,17 @@
   scroll-margin-top: 80px;
 }
 
-.ProposalsComponent h2 {
+.AgendaComponent h2 {
   color: #1e3c72;
   font-size: 1.75rem;
   font-weight: 700;
-  margin: 0 0 2rem 0;
+  margin: 0 0 0.5rem 0;
   text-align: center;
   position: relative;
   padding-bottom: 0.75rem;
 }
 
-.ProposalsComponent h2::after {
+.AgendaComponent h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -28,14 +28,20 @@
   border-radius: 2px;
 }
 
-.proposals-cards {
+.agenda-subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+  margin: 0 0 2rem 0;
+}
+
+.events-container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-bottom: 3rem;
 }
 
-.proposal-card {
+.event-card {
   background: #ffffff;
   border-radius: 12px;
   padding: 1.5rem;
@@ -44,96 +50,139 @@
   border: 1px solid #e0e0e0;
 }
 
-.proposal-card:hover {
+.event-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.card-icon {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
+.event-date {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: rgba(42, 82, 152, 0.1);
+  border-radius: 6px;
   margin-bottom: 1rem;
 }
 
-.proposal-card h3 {
+.date-text {
+  color: #1e3c72;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.time-text {
+  color: #2a5298;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.event-content {
+  flex: 1;
+}
+
+.event-content h3 {
   color: #1e3c72;
   font-size: 1.25rem;
   font-weight: 700;
-  margin: 0 0 0.75rem 0;
-  text-align: center;
+  margin: 0 0 0.5rem 0;
 }
 
-.proposal-card p {
+.event-description {
   color: #555;
   font-size: 0.95rem;
   line-height: 1.6;
+  margin: 0 0 0.75rem 0;
+}
+
+.event-location {
+  color: #2a5298;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin: 0;
-  text-align: center;
+}
+
+.location-icon {
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) {
-  .ProposalsComponent {
+  .AgendaComponent {
     padding: 3rem 2rem;
   }
 
-  .ProposalsComponent h2 {
+  .AgendaComponent h2 {
     font-size: 2rem;
   }
 
-  .proposals-cards {
+  .agenda-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .events-container {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1.5rem;
   }
 
-  .proposal-card {
+  .event-card {
     flex: 1 1 calc(50% - 0.75rem);
     min-width: 0;
   }
 
-  .card-icon {
-    height: 220px;
-  }
-
-  .proposal-card h3 {
+  .event-content h3 {
     font-size: 1.35rem;
   }
 
-  .proposal-card p {
+  .event-description {
     font-size: 1rem;
+  }
+
+  .event-location {
+    font-size: 0.95rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .ProposalsComponent {
+  .AgendaComponent {
     padding: 4rem 3rem;
   }
 
-  .ProposalsComponent h2 {
+  .AgendaComponent h2 {
     font-size: 2.25rem;
   }
 
-  .proposals-cards {
+  .events-container {
     gap: 2rem;
   }
 
-  .proposal-card {
+  .event-card {
     flex: 1 1 calc(50% - 1rem);
     padding: 2rem;
   }
 
-  .card-icon {
-    height: 240px;
-  }
-
-  .proposal-card h3 {
+  .event-content h3 {
     font-size: 1.5rem;
   }
 
-  .proposal-card p {
+  .event-description {
     font-size: 1.05rem;
     line-height: 1.7;
+  }
+
+  .event-location {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .events-container {
+    gap: 2rem;
+  }
+
+  .event-card {
+    flex: 1 1 calc(33.333% - 1.35rem);
   }
 }

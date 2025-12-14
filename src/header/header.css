@@ -45,7 +45,6 @@
 
 .HeaderComponent nav a:active {
   background-color: rgba(255, 255, 255, 0.3);
-  transform: scale(0.98);
 }
 
 @media (min-width: 768px) {
@@ -77,12 +76,7 @@
 
   .HeaderComponent nav a:hover {
     background-color: rgba(255, 255, 255, 0.25);
-    transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .HeaderComponent nav a:active {
-    transform: translateY(0);
   }
 }
 
