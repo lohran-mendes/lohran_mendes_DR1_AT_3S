@@ -1,5 +1,9 @@
 import OtherProposals from "./other-proposals/other-proposals";
 import "./proposals.css";
+import laboratoriosImg from "../assets/laboratorios_de_informatica.jpeg";
+import cursoTecnicoImg from "../assets/curso_tecnico_gratuito.webp";
+import internetPublicaImg from "../assets/internet_publica.png";
+import capacitacaoImg from "../assets/capacitacao_de_professores.jpg";
 
 function Proposals() {
   const proposalsCards = [
@@ -8,7 +12,7 @@ function Proposals() {
       title: "Laboratórios de Informática",
       description:
         "Criação de laboratórios de informática equipados em todas as escolas municipais para garantir acesso à tecnologia desde a infância.",
-      image: "src/assets/laboratorios_de_informatica.jpeg",
+      image: laboratoriosImg,
       alt: "Laboratório de informática com computadores",
     },
     {
@@ -16,7 +20,7 @@ function Proposals() {
       title: "Cursos Técnicos Gratuitos",
       description:
         "Oferta de cursos técnicos de programação, design e tecnologia para jovens da periferia, preparando-os para o mercado de trabalho.",
-      image: "src/assets/curso_tecnico_gratuito.webp",
+      image: cursoTecnicoImg,
       alt: "Jovens estudando em sala de aula",
     },
     {
@@ -24,7 +28,7 @@ function Proposals() {
       title: "Internet Pública",
       description:
         "Implementação de internet pública de alta qualidade nas comunidades e praças, democratizando o acesso à informação.",
-      image: "src/assets/internet_publica.png",
+      image: internetPublicaImg,
       alt: "Tecnologia de conexão digital",
     },
     {
@@ -32,7 +36,7 @@ function Proposals() {
       title: "Capacitação de Professores",
       description:
         "Programas de capacitação digital para professores, garantindo que educadores dominem ferramentas tecnológicas modernas.",
-      image: "src/assets/capacitacao_de_professores.jpg",
+      image: capacitacaoImg,
       alt: "Professor ensinando com tecnologia",
     },
   ];

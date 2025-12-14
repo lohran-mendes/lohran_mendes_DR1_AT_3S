@@ -1,4 +1,6 @@
 import "./footer.css";
+import facebookIcon from "/facebook.png";
+import instagramIcon from "/instagram.png";
 
 function Footer() {
   return (
@@ -23,12 +25,12 @@ function Footer() {
           <h4>Redes Sociais</h4>
           <div className="social-links">
             <a href="https://facebook.com" aria-label="Facebook">
-              <img src="/facebook.png" alt="Facebook" className="social-icon" />
+              <img src={facebookIcon} alt="Facebook" className="social-icon" />
               Facebook
             </a>
             <a href="https://instagram.com" aria-label="Instagram">
               <img
-                src="/instagram.png"
+                src={instagramIcon}
                 alt="Instagram"
                 className="social-icon"
               />
