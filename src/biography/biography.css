@@ -1,0 +1,134 @@
+.BiographyComponent {
+  padding: 1.5rem 1rem 0rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  scroll-margin-top: 112px;
+}
+
+.BiographyComponent img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  margin: 0 auto 1.5rem;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.BiographyComponent img:hover {
+  transform: scale(1.02);
+}
+
+.BiographyComponent article {
+  padding: 0 0.5rem;
+}
+
+.BiographyComponent p {
+  font-family: "Arial", sans-serif;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1rem;
+  text-align: justify;
+  margin: 0 0 1rem 0;
+}
+
+.BiographyComponent strong {
+  color: #1e3c72;
+  font-weight: 700;
+}
+
+.BiographyComponent em {
+  color: #555;
+  font-style: italic;
+}
+
+.BiographyComponent blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-left: 4px solid #2a5298;
+  background: linear-gradient(to right, rgba(42, 82, 152, 0.05), transparent);
+  border-radius: 4px;
+  font-style: italic;
+  color: #1e3c72;
+}
+
+.BiographyComponent blockquote footer {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .BiographyComponent {
+    padding: 2.5rem 2rem;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .BiographyComponent img {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .BiographyComponent article {
+    grid-column: 2;
+    padding: 0;
+  }
+
+  .BiographyComponent h2 {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .BiographyComponent h2::after {
+    left: 0;
+    transform: none;
+  }
+
+  .BiographyComponent h3 {
+    font-size: 1.4rem;
+  }
+
+  .BiographyComponent p {
+    font-size: 1.05rem;
+    text-align: left;
+  }
+
+  .BiographyComponent ul li {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .BiographyComponent {
+    padding: 3rem 3rem;
+    grid-template-columns: 350px 1fr;
+    gap: 3rem;
+  }
+
+  .BiographyComponent h2 {
+    font-size: 2.25rem;
+  }
+
+  .BiographyComponent h3 {
+    font-size: 1.5rem;
+  }
+
+  .BiographyComponent p {
+    font-size: 1.1rem;
+    line-height: 2;
+  }
+
+  .BiographyComponent ul li {
+    font-size: 1.1rem;
+  }
+
+  .BiographyComponent blockquote {
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    font-size: 1.1rem;
+  }
+}
